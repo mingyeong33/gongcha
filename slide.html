@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    section {
+      width: 100%;
+      margin: 100px 0;
+    }
+
+    section .section_t {
+      width: calc(100% - 120px);
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    section .section_t>a {
+      padding: 15px 20px;
+      background-color: firebrick;
+      color: #fff;
+    }
+
+    section .allbox {
+      width: calc(100% - 120px);
+      margin: 50px auto;
+      display: flex;
+    }
+
+    section .allbox .box {
+      flex-grow: 1;
+      flex-basis: calc(100% / 3);
+      background-color: beige;
+    }
+    /* section .allbox .b3 {
+      padding: 20px;
+    } */
+
+    section .allbox .box .box_t {
+      margin-bottom: 50px;
+    }
+
+    section .allbox .box .box_i .box_t {
+      width: 100%;
+      padding: 0 10px;
+
+    }
+
+    section .allbox .box .box_inner {
+      width: 100%;
+      padding: 0 10px;
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    section .allbox .b3{
+      padding: 20px;
+    }
+
+    section .allbox .box .box_inner a {
+      width: calc(50% - 10px);
+      background-color: salmon;
+    }
+
+    section .allbox .box {
+      margin-right: 20px;
+    }
+  </style>
+  <script src="./script/jquery-3.7.1.min.js"></script>
+  <script src="./script/slick.min.js"></script>
+  <script>
+    $(function () {
+      $(".allbox").slick({
+        slide: 'none',
+        arrows: 'none',
+        responsive: [
+          {
+            breakpoint: 1500,
+            settings: {
+              slide: 'div',
+              slidesToShow: 2,
+            }
+          },
+          {
+            breakpoint: 767,
+            settings: {
+              slide: 'div',
+              slidesToShow: 1,
+            }
+          }
+        ]
+      });
+    });
+  </script>
+</head>
+
+<body>
+
+  <section>
+    <div class="section_t">
+      <div class="s_text">
+        <h2>How To order</h2>
+        <p>취향에 맞게 토핑,당도 얼음량 까지 맞추 주문이 가능합니다.</p>
+      </div>
+      <a href="#">More</a>
+    </div>
+    <div class="allbox">
+      <div class="box b1">
+        <div class="box_i">
+          <div class="box_t">
+            <span>step1</span>
+            <h3>TEA MENU</h3>
+            <p>취향에 맞게 공차의 음료를 고르세요.</p>
+          </div>
+          <div class="box_inner">
+            <a href="#">
+              <img src="./image/hto_s1_1.png" alt="h1">
+              <h4>오리지널 티</h4>
+              <p>(Hot & ICED)</p>
+            </a>
+            <a href="#">
+              <img src="./image/hto_s1_2.png" alt="h2">
+              <h4>밀크티</h4>
+              <p>(Hot & ICED)</p>
+            </a>
+            <a href="#">
+              <img src="./image/hto_s1_3.png" alt="h1">
+              <h4>프룻티</h4>
+              <p>(Hot & ICED)</p>
+            </a>
+            <a href="#">
+              <img src="./image/hto_s1_4.png" alt="h1">
+              <h4>쥬얼리</h4>
+              <p>(Hot & ICED)</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="box b2">
+        <div class="box_i">
+          <div class="box_t">
+            <span>step2</span>
+            <h3>TOPPINGS</h3>
+            <p>6가지 토핑 중 원하는 토핑을 선택하세요</p>
+            <span>(최대 가지 선택 가능)</span>
+          </div>
+          <div class="box_inner">
+            <a href="#">
+              <img src="./image/hto_s2_1.png" alt="h1">
+              <h4>오리지널 티</h4>
+              <p>(Hot & ICED)</p>
+            </a>
+            <a href="#">
+              <img src="./image/hto_s2_2.png" alt="h2">
+              <h4>밀크티</h4>
+              <p>(Hot & ICED)</p>
+            </a>
+            <a href="#">
+              <img src="./image/hto_s2_3.png" alt="h1">
+              <h4>프룻티</h4>
+              <p>(Hot & ICED)</p>
+            </a>
+            <a href="#">
+              <img src="./image/hto_s2_4.png" alt="h1">
+              <h4>쥬얼리</h4>
+              <p>(Hot & ICED)</p>
+            </a>
+            <a href="#">
+              <img src="./image/hto_s2_5.png" alt="h1">
+              <h4>쥬얼리</h4>
+              <p>(Hot & ICED)</p>
+            </a>
+            <a href="#">
+              <img src="./image/hto_s2_6.png" alt="h1">
+              <h4>쥬얼리</h4>
+              <p>(Hot & ICED)</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="box b3">
+        <div class="box_i">
+          <div class="box_t">
+            <span>step2</span>
+            <h3>TOPPINGS</h3>
+            <p>6가지 토핑 중 원하는 토핑을 선택하세요</p>
+            <span>(최대 가지 선택 가능)</span>
+          </div>
+          <div class="box_inner">
+            <a href="#">
+              <img src="./image/hto_s2_1.png" alt="h1">
+              <h4>오리지널 티</h4>
+              <p>(Hot & ICED)</p>
+            </a>
+            <a href="#">
+              <img src="./image/hto_s2_2.png" alt="h2">
+              <h4>밀크티</h4>
+              <p>(Hot & ICED)</p>
+            </a>
+            <a href="#">
+              <img src="./image/hto_s2_3.png" alt="h1">
+              <h4>프룻티</h4>
+              <p>(Hot & ICED)</p>
+            </a>
+            <a href="#">
+              <img src="./image/hto_s2_4.png" alt="h1">
+              <h4>쥬얼리</h4>
+              <p>(Hot & ICED)</p>
+            </a>
+            <a href="#">
+              <img src="./image/hto_s2_5.png" alt="h1">
+              <h4>쥬얼리</h4>
+              <p>(Hot & ICED)</p>
+            </a>
+            <a href="#">
+              <img src="./image/hto_s2_6.png" alt="h1">
+              <h4>쥬얼리</h4>
+              <p>(Hot & ICED)</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
